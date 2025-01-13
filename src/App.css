@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .App-logo {
@@ -35,4 +36,115 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.nav-bar {
+  background-color: #ffaa29;
+}
+.nav-link {
+  color: #282c34;
+}
+.home-page {
+  width: 70vh;
+}
+.input-box {
+  width: 15vw;
+  max-height: 30px;
+}
+.bg-home {
+  background-color: rgba(252, 179, 23, 0.226) !important;
+  border-radius: 20px;
+  height: 100%;
+  width: 100vw;
+  line-height: 200px;
+  text-align: center;
+}
+.bg-home-com {
+  background-color: rgba(252, 179, 23, 0.226) !important;
+  border-radius: 20px;
+  height: 90vh;
+  width: 100vw;
+  line-height: 200px;
+  text-align: center;
+  ;
+}
+.bg-home-1 {
+  background-color: rgba(252, 179, 23, 0.226) !important;
+  border-radius: 20px;
+  /* height: 70vh; */
+  line-height: 200px;
+  text-align: center;
+}
+.set-data {
+  font-family: "Abril Fatface", serif !important;
+  /* font-weight: 500 !important; */
+  font-style: normal !important;
+}
+.set-frame-data {
+  align-items: center !important;
+  padding: 50px ;
+}
+.nav-active {
+  color: gray;
+  font-weight: bold;
+}
+.data-th {
+  font-family: "Noto Sans Thai", sans-serif !important;
+  line-height: 250%;
+}
+
+/* about */
+.bg-icon {
+  background-color: white;
+  padding: 20px;
+  border-radius: 100%;
+  box-shadow: 5px 5px 5px #b48961;
+}
+.pointer-event {
+  pointer-events: auto !important;
+}
+.box-item {
+  border-radius: 10px;
+  width: 200px !important;
+  height: 250px !important;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.box-item:hover {
+  transform: scale(1.1); 
+  background-color: #f0f0f0; 
+}
+.box-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.box-container {
+  position: absolute;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.box-text {
+  line-height: 1.6; 
+  padding: 0;
+  vertical-align: middle;
+}
+::selection {
+  background-color: #f8b045;
+  color: white;
+}
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0;
+}
+.pointer-events {
+  cursor: pointer !important;
+}
+.ant-select-selection-placeholder {
+  color: #4e4c4c !important;
+  font-size: 16px ;
 }
