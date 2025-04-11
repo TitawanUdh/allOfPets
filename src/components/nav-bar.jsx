@@ -1,7 +1,5 @@
 import { Input } from "antd";
 import React from "react";
-import { CiLogin } from "react-icons/ci";
-import { LuLogIn } from "react-icons/lu";
 import { MdFavorite } from "react-icons/md";
 
 function NavBar() {

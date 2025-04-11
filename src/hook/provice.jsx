@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Form } from "react-bootstrap";
 
-const AutoSuggest = ({ isClear, selectedProvince }) => {
+const AutoSuggest = ({ isClear, selectedProvince, onDistrictQueryChange }) => {
   useEffect(() => {
     setSelectedDistrict("");
     setDistrictQuery("");
@@ -231,16 +231,19 @@ const AutoSuggest = ({ isClear, selectedProvince }) => {
       } else {
         setSuggestedDistricts([]);
       }
+      
     }
   };
 
   // เลือกเขต
   const handleDistrictSelect = (district) => {
+    // console.log('district', district);
+    onDistrictQueryChange(district.district); 
     setDistrictQuery(district.district);
     setSelectedDistrict(district);
     setSuggestedDistricts([]);
     setSubdistrictQuery(""); // รีเซ็ตคำค้นหาแขวง
-    setSuggestedSubdistricts([]); // รีเซ็ตรายการแขวง
+    setSuggestedSubdistricts([]); // รีเซ็ตรายการแขวง  
   };
 
   // ค้นหาแขวง (ขึ้นอยู่กับเขตที่เลือก)

@@ -14,6 +14,7 @@ import Grooming from "./components/Communities/grooming";
 import Hotel from "./components/Communities/hotel";
 import Department from "./components/Communities/department";
 import Restaurant from "./components/Communities/restaurant";
+import CafeDetail from "./components/Communities/cafe-detail";
 function App() {
   return (
     <BrowserRouter>
@@ -23,6 +24,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/communities" element={<CommunitiesPage />} />
         <Route path="/communities/cafe" element={<Cafe />} />
+        <Route path="/communities/cafe/details" element={<CafeDetail />} />
         <Route path="/communities/restaurant" element={<Restaurant />} />
         <Route path="/communities/department" element={<Department />} />
         <Route path="/communities/hotel" element={<Hotel />} />
